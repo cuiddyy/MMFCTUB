@@ -54,7 +54,11 @@ Existing benchmarks inadequately assess MLLM performance on such specialized fin
 - **👥 246 Applicants**: Diverse credit applicant profiles across 9 credit levels
 - **📋 19,564 Tables**: Real-world credit tables across 5 major categories
 - **🔤 60+ Fields**: Domain-specific financial fields covering complete credit profiles
-- **🔢 12 Input Numbers**: Various numerical data points for calculation tasks
+- **🔢 12 Input Numbers**: Number of Input Tables
+- **54 Applicant Indicators**: Credit utilization, account duration, turnover efficiency
+- **3 Calculation Operators**: Addition, Subtraction, Division
+- **3 Question Types**: Single Selection, Multi Selection, Calculation
+- **Scenarios**: Real-world calculation from credit assessment
 - **📑 5 Core Table Types**:
   - [Credit Transaction Table](credit_transaction_table.png)
   - [Residence Info Table](residence_info_table.png)
@@ -90,28 +94,8 @@ Assesses financial domain expertise through mask-and-recovery evaluation:
 #### 3️⃣ **Domain Numerical Calculation**
 Tests arithmetic reasoning in financial contexts:
 - **3 Calculation Operators**: Addition (+), Subtraction (-), Division (÷)
-- **54 Applicant Indicators**: Credit utilization, account duration, turnover efficiency
-- **Scenarios**: Real-world calculation from credit assessment
 
 ---
-
-## 📊 Dataset Statistics
-
-| Dimension | Count | Description |
-|-----------|-------|-------------|
-| **Total Samples** | 7,657 | High-quality CTU question-answer pairs |
-| **Applicants** | 246 | Unique credit applicant profiles |
-| **Credit Tables** | 19,564 | Across 5 major table types |
-| **Table Input Numbers** | 12 | Numerical data points per sample |
-| **Table Fields** | 60+ | Domain-specific financial fields |
-| **Credit Categories** | 5 | Comprehensive credit report coverage |
-| **Cross-Table Paradigms** | 3 | Inter-table relationship patterns |
-| **Knowledge Levels** | 3 | Perception, Analysis, Reasoning |
-| **Domain Knowledge Types** | 5 | Account, Amount, Temporal, Ratio, Weight |
-| **Calculation Operators** | 3 | Addition, Subtraction, Division |
-| **Applicant Indicators** | 54 | Financial indicators for loan applicants |
-| **Question Types** | 3 | Single Selection, Multi Selection, Calculation |
-
 ### Credit Table Categories
 
 1. **📝 credit transaction tables**:
