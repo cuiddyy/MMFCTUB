@@ -55,6 +55,15 @@ Existing benchmarks inadequately assess MLLM performance on such specialized fin
 - **📋 19,564 Tables**: Real-world credit tables across 5 major categories
 - **🔤 60+ Fields**: Domain-specific financial fields covering complete credit profiles
 - **🔢 12 Input Numbers**: Various numerical data points for calculation tasks
+- **📑 5 Core Table Types**:
+  - [Credit Transaction Table](credit_transaction_table.png)
+  - [Residence Info Table](residence_info_table.png)
+  - [Occupation Info Table](occupation_info_table.png)
+  - [Account Detail Table]
+    - [Non-revolving Loan Account Table](non_revolving_loan_account_table.png)
+    - [Revolving Loan Account Table](revolving_loan_account_table.png)
+    - [Sub Account Under Revolving Credit Account Table](sub_account_under_revolving_credit_account_table.png)
+  - [Credit Agreement Table](credit_agreement_table.png)
 - **🔄 3 Cross-Table Paradigms**: 
   - Homo. Static (Cross-table Operations Between Homogeneous Static Tables)
   - Homo. Dynamic (Cross-table Operations Between Homogeneous Dynamic Tables)
@@ -63,12 +72,6 @@ Existing benchmarks inadequately assess MLLM performance on such specialized fin
     1. Homo. Static = Credit Agreement Table
     2. Homo. Dynamic = Credit Transaction Table, Account Detail Table
     3. Hetero. = Account Detail Table + Residence Info Table, Account Detail Table + Occupation Info Table
-- **📑 5 Core Table Types**:
-  - Credit Transaction Table
-  - Residence Info Table
-  - Occupation Info Table
-  - Account Detail Table
-  - Credit Agreement Table
 
 ### Three-Aspect Evaluation Framework
 
