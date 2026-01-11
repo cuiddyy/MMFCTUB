@@ -1,7 +1,7 @@
 # MMFCTUB: Multi-Modal Financial Credit Table Understanding Benchmark
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Paper](https://arxiv.org/abs/2601.04643)](https://arxiv.org/abs/2601.04643)
+[![ArXiv:2601.04643](https://img.shields.io/badge/ArXiv-2601.04643-blue.svg?style=for-the-badge)](https://arxiv.org/abs/2601.04643)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow.svg)](link-to-dataset)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
