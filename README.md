@@ -16,15 +16,7 @@
 - [Key Features](#-key-features)
 - [Benchmark Highlights](#-benchmark-highlights)
 - [Dataset Statistics](#-dataset-statistics)
-- [Quick Start](#-quick-start)
 - [Evaluation](#-evaluation)
-- [Leaderboard](#-leaderboard)
-- [Dataset Structure](#-dataset-structure)
-- [Examples](#-examples)
-- [Citation](#-citation)
-- [License](#-license)
-- [Acknowledgments](#-acknowledgments)
-- [Contact](#-contact)
 
 ---
 
@@ -103,4 +95,15 @@ Tests arithmetic reasoning in financial contexts:
 4. **📅 account detail tables**: Payment records, delays, and compliance
 5. **🔍 credit agreement tables**: Application history and inquiry patterns
 
+---
+## 📝 Evaluation
+We establish distinct evaluation paradigms for three Credit Table Understanding (CTU) capacities, using differentiated questions to isolate specific capability bottlenecks.
+
+### Evaluation Paradigm
+1.  **Structure Perception**
+    Questions require extensive table extraction with minimal computation, measuring accuracy on unmasked samples to isolate structural understanding independent of other capabilities.
+2.  **Domain Knowledge Utilization**
+    We employ mask-and-recovery evaluation where column names are randomly masked with 'XXXX' tokens. We use Financial Knowledge Hit Rate (FKHR) to measure proficiency in identifying and applying domain-specific knowledge.
+3.  **Numerical Calculation**
+    We assess MLLMs through the mask-and-recovery paradigm. During question generation, the program randomly masks calculation operators from an expert-predefined list in the prompts using 'YYYY' as the mask token. During evaluation, we employ calculation operator hit rate (COHR) as the metric, quantifying MLLMs' proficiency in identifying and applying appropriate operators essential to the calculation process.
 ---
