@@ -1,7 +1,7 @@
 # MMFCTUB: Multi-Modal Financial Credit Table Understanding Benchmark
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/Paper-ACL%202026-green.svg)](link-to-paper)
+[![Paper](https://arxiv.org/abs/2601.04643)](link-to-paper)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-yellow.svg)](link-to-dataset)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
@@ -50,22 +50,34 @@ Existing benchmarks inadequately assess MLLM performance on such specialized fin
 
 ### Comprehensive Coverage
 
-- **📊 7,657+ Samples**: High-quality CTU (Credit Table Understanding) question-answer pairs
+- **📊 7,600+ Samples**: High-quality CTU (Credit Table Understanding) question-answer pairs
 - **👥 246 Applicants**: Diverse credit applicant profiles across 9 credit levels
 - **📋 19,564 Tables**: Real-world credit tables across 5 major categories
 - **🔤 60+ Fields**: Domain-specific financial fields covering complete credit profiles
 - **🔢 12 Input Numbers**: Various numerical data points for calculation tasks
+- **🔄 3 Cross-Table Paradigms**: 
+  - Homo. Static (Cross-table Operations Between Homogeneous Static Tables)
+  - Homo. Dynamic (Cross-table Operations Between Homogeneous Dynamic Tables)
+  - Hetero. (Cross-table Operations Between Heterogeneous Tables)
+  - Inclusion relationships (Paradigm → Table Types):
+    1. Homo. Static = Credit Agreement Table
+    2. Homo. Dynamic = Credit Transaction Table, Account Detail Table
+    3. Hetero. = Account Detail Table + Residence Info Table, Account Detail Table + Occupation Info Table
+- **📑 5 Core Table Types**:
+  - Credit Transaction Table
+  - Residence Info Table
+  - Occupation Info Table
+  - Account Detail Table
+  - Credit Agreement Table
 
 ### Three-Aspect Evaluation Framework
 
-#### 1️⃣ **Table Structure Perception**
-Evaluates MLLMs' ability to comprehend table contents and inter-table relationships:
-- ✅ Extract field names from headers
-- ✅ Navigate complex multi-table layouts  
-- ✅ Identify cross-table dependencies
-- **Evaluation**: 3 cross-table paradigms
-Cross-table Operations Between Homogeneous Static Table, Cross-table Operations Between Homogeneous Dynamic Tables, Cross-table Operations Between
-Heterogeneous Table
+#### 1️⃣ **Table Structure Perception (TSP)**
+Evaluates MLLMs' ability to comprehend table contents and inter-table relationships. Specifically, TSP assesses models' capacity to perceive table structures, including spatial layouts and cross-table relationships. Evaluation spans two dimensions:
+- **Structural perception**: Assessed across multiple cross-table paradigms.
+- **Scope perception**: Assessed across three table count ranges (3-5, 6-8, 9-13).
+
+By minimizing domain knowledge and computational demands in question design, we isolate structural perception capabilities. Performance is measured by answer accuracy.
 
 #### 2️⃣ **Domain Knowledge Utilization**
 Assesses financial domain expertise through mask-and-recovery evaluation:
