@@ -84,8 +84,8 @@ By minimizing domain knowledge and computational demands in question design, we 
 
 #### 2️⃣ **Domain Knowledge Utilization**
 Assesses financial domain expertise through mask-and-recovery evaluation:
-- **3 Knowledge Levels**: Perception, Analysis, Reasoning
-- **5 Domain Knowledge Types**: Account, Amount, Temporal, Ratio, Weight
+- **3 Knowledge Levels**: Perception, Analysis, Reasoning([Categroy Detail](knowledge_utilization_model_level))
+- **5 Domain Knowledge Types**: Account, Amount, Temporal, Ratio, Weight([Categroy Detail](knowledge_utilization_domain_level))
 
 #### 3️⃣ **Domain Numerical Calculation**
 Tests arithmetic reasoning in financial contexts:
